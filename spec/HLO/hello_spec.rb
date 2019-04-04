@@ -9,7 +9,8 @@ require_solution 'HLO'
 describe Hello do
   describe '#hello' do
     it 'Should say hello to the world' do
-      expect(subject.hello).to eq "Hello, world!"
+      expect(subject.hello("Alice")).to eq "Hello, Alice!"
     end
   end
 end
+
