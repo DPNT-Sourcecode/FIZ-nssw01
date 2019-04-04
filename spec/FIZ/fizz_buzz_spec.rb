@@ -17,6 +17,11 @@ describe FizzBuzz do
       expect(subject.fizz_buzz(12)).to eq 'fizz'
     end
 
+    it 'returns fizz when the number includes a 3' do
+      expect(subject.fizz_buzz(13)).to eq 'fizz'
+      expect(subject.fizz_buzz(37)).to eq 'fizz'
+    end
+
     it 'returns buzz when the number is divisible by 5' do
       expect(subject.fizz_buzz(5)).to eq 'buzz'
       expect(subject.fizz_buzz(20)).to eq 'buzz'
@@ -28,5 +33,6 @@ describe FizzBuzz do
     end
   end
 end
+
 
 
